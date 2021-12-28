@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 import "hardhat/console.sol";
+import "./libraries/Base64.sol";
 
 contract MyEpicGame is ERC721 {
     
