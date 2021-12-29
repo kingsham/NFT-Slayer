@@ -31,15 +31,38 @@ mapping(uint256 => CharacterAttributes) public nftHolderAttributes;
   // Data passed in to the contract when it's first created initializing the characters.
   // We're going to actually pass these values in from from run.js.
 mapping(address => uint256) public nftHolders;
+struct BigBoss {
+  string name;
+  string imageURI;
+  uint hp;
+  uint maxHp;
+  uint attackDamage;
+}
+
+BigBoss public bigBoss;
+
 
   constructor(
     string[] memory characterNames,
     string[] memory characterImageURIs,
     uint[] memory characterHp,
-    uint[] memory characterAttackDmg
+    uint[] memory characterAttackDmg,
+    string memory bossName,
+    string memory bossImageURI,
+  uint bossHp,
+  uint bossAttackDamage
+
   )
   ERC721("No_Mo_Heroes", "NMH")
   {
+
+    bigBoss = BigBoss({
+    name: bossName,
+    imageURI: bossImageURI,
+    hp: bossHp,
+    maxHp: bossHp,
+    attackDamage: bossAttackDamage
+    });
     // Loop through all the characters, and save their values in our contract so
     // we can use them later when we mint our NFTs.
     for(uint i = 0; i < characterNames.length; i += 1) {
