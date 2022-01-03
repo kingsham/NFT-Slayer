@@ -13,7 +13,7 @@ const main = async () => {
         [100,50,25,50,25,50],
         "Lord Fu",
         "https://cdn.wccftech.com/wp-content/uploads/2019/12/WCCFnomoreheroes32.jpg",
-         10000, //Boss hp
+         1000, //Boss hp
          50 // Boss attack dmg
     
     );
