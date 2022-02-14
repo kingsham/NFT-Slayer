@@ -14,12 +14,12 @@ contract MyEpicGame is ERC721 {
     struct CharacterAttributes {
         uint characterIndex;
         string name;
-        string imageURI;        
+        string imageURI;
         uint hp;
         uint maxHp;
         uint attackDamage;
     }
-  
+
     // A lil array to help us hold the default data for our characters.
     // This will be helpful when we mint new characters and need to know
     // things like their HP, AD, etc.
@@ -31,7 +31,7 @@ contract MyEpicGame is ERC721 {
     // Data passed in to the contract when it's first created initializing the characters.
     // We're going to actually pass these values in from from run.js.
     mapping(address => uint256) public nftHolders;
-    
+
     event CharacterNFTMinted(address sender, uint256 tokenId, uint256 characterIndex);
     event AttackComplete(uint newBossHp, uint newPlayerHp);
     
@@ -111,11 +111,10 @@ contract MyEpicGame is ERC721 {
         console.log("Player attacked boss. New boss hp: %s", bigBoss.hp);
         console.log("Boss attacked player. New player hp: %s\n", player.hp);
 
-    
-        
+
         emit AttackComplete(bigBoss.hp, player.hp);
     }
-    
+
     function mintCharacterNFT(uint _characterIndex) external {
         // Get current tokenId (starts at 1 since we incremented in the constructor).
         uint256 newItemId = _tokenIds.current();
