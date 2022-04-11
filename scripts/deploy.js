@@ -4,7 +4,7 @@ const main = async () => {
   
       ["Travis","Henry","Shinobu","DrPeace","Badgirl"],
       ["https://imgur.com/v9uyM4M.png", // TRAVIS 
-      "https://imgur.com/yZ9mfdg .png", // HENRY
+      "https://imgur.com/NrPkEDp.png", // HENRY
       "https://i.imgur.com/8S1Ub2C.png", // SHINOBU
       "https://imgur.com/F6beVAr.png", // DR PEACE
       "https://imgur.com/2185BRb.png"], // BADGIRL

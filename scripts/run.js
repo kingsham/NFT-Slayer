@@ -36,7 +36,7 @@ console.log("Token URI:", returnedTokenUri);
 
 
 
-  
+
   const runMain = async () => {
     try {
       await main();
