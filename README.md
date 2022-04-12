@@ -1,15 +1,6 @@
-# Basic Sample Hardhat Project
+# NO MORE NFT
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project is a nft based browser game i created using Solidty. Play as a character as your choosing to take down the boss{ its sorta like Pokemon} . 
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
