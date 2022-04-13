@@ -1,4 +1,4 @@
-# NO MORE NFT
+# ⚔️NO MORE NFT 🪐⚔️
 
 
 https://user-images.githubusercontent.com/25596786/163236731-4a9c93eb-21b0-4fe9-88f3-3a3b5e9379d5.mov
